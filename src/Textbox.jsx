@@ -1,8 +1,10 @@
+import { useState } from "react";
+
 function Textbox() {
   const [result, setResult] = useState("");
 
   function handleChange(event) {
-    let result = event.target.value;
+    return setResult(event.target.value);
   }
 
   return (
