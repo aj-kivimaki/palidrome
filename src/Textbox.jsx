@@ -1,11 +1,8 @@
-import React, { useState } from "react";
-// import Textbox from "./Textbox";
-
-function App() {
+function Textbox() {
   const [result, setResult] = useState("");
 
   function handleChange(event) {
-    return setResult(event.target.value);
+    let result = event.target.value;
   }
 
   return (
@@ -23,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default Textbox;
