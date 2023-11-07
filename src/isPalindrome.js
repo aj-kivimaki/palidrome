@@ -1,13 +1,11 @@
 export function isPalindrome(input) {
-  // compare input and reversed input, if the same, return true
-  // make it string type and lowercase for easy comparing
+  // compare input and reversed input, return empty string if true, return "NOT" if false
+  // make it string type and uppercase for easy comparing
   let reversed = "";
-  let string = String(input).toLowerCase();
+  let string = String(input).toUpperCase();
   for (let i = string.length - 1; i >= 0; i--) {
     reversed += string[i];
-    if (string === reversed) return true;
+    if (string === reversed) return "";
   }
-  return false;
+  return "NOT";
 }
-
-console.log(isPalindrome("saippuakauppias"));
