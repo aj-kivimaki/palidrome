@@ -3,7 +3,7 @@ import { isPalindrome } from "./isPalindrome";
 const Label = ({ term }) => {
   return (
     <div className="result">
-      <h2>{`This is ${isPalindrome(term)} a Palindrome!`}</h2>
+      <h2>{isPalindrome(term)}</h2>
     </div>
   );
 };
