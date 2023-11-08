@@ -1,9 +1,8 @@
 export function isPalindrome(input) {
+  // no display when no input
+  if (input === "") return "";
   // compare input and reversed input
   // make it string type and uppercase and remove white space for easy comparing
-  if (input === "") {
-    return "";
-  }
   let reversed = "";
   let string = String(input).toUpperCase().replace(/\s/g, "");
   for (let i = string.length - 1; i >= 0; i--) {

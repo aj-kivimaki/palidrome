@@ -13,8 +13,8 @@ function App() {
     <div className="app">
       <main className="main">
         <h1>PALINDROME CHECKER</h1>
-        <Input onSearch={handleSearch} />
-        <Label term={searchTerm.toUpperCase()} />
+        <Input searchTerm={searchTerm} search={handleSearch} />
+        <Label searchTerm={searchTerm.toUpperCase()} />
       </main>
     </div>
   );

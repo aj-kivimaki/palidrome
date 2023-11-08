@@ -1,9 +1,9 @@
 import { isPalindrome } from "./isPalindrome";
 
-const Label = ({ term }) => {
+const Label = ({ searchTerm }) => {
   return (
     <div className="result">
-      <h2>{isPalindrome(term)}</h2>
+      <h2>{isPalindrome(searchTerm)}</h2>
     </div>
   );
 };
