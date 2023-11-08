@@ -39,3 +39,7 @@ input {
   border-radius: 5px;
   font-size: 24px;
 }
+
+input:focus {
+  outline: 2px solid #333;
+}
